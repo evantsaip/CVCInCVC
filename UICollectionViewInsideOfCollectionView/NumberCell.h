@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface NumberCell : UICollectionViewCell
+{
+    IBOutlet UILabel *txtNumber;
+}
+- (void)LoadCell:(NSString*)Number;
 
 @end

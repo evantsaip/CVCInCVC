@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CellViewController : UIViewController
-
+@interface CellViewController : UIViewController <UICollectionViewDataSource,UICollectionViewDelegate>
+{
+    NSMutableArray *items;
+    IBOutlet UICollectionView *itemstable;
+}
 @end

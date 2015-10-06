@@ -7,7 +7,7 @@
 //
 
 #import "CellViewController.h"
-
+#import "NumberCell.h"
 @interface CellViewController ()
 
 @end
@@ -16,6 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    items = [[NSMutableArray alloc]init];
+    [items addObject:@"1"];
+    [items addObject:@"2"];
+    [itemstable setDataSource:self];
+    [itemstable setDelegate:self];
+    [itemstable reloadData];
     // Do any additional setup after loading the view.
 }
 
@@ -24,6 +30,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 1;
+}
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    return items.count;
+}
+- (UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *buf = items[indexPath.row];
+    NumberCell *cell = (NumberCell*)[collectionView dequeueReusableCellWithReuseIdentifier:@"numberCell" forIndexPath:indexPath];
+    [cell LoadCell:buf];
+    return cell;
+}
 /*
 #pragma mark - Navigation
 

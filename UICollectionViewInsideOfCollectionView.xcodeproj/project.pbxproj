@@ -14,6 +14,8 @@
 		2014D4F61BC3606C00A3B9A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2014D4F51BC3606C00A3B9A6 /* Images.xcassets */; };
 		2014D4F91BC3606C00A3B9A6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2014D4F71BC3606C00A3B9A6 /* LaunchScreen.xib */; };
 		2014D5051BC3606C00A3B9A6 /* UICollectionViewInsideOfCollectionViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2014D5041BC3606C00A3B9A6 /* UICollectionViewInsideOfCollectionViewTests.m */; };
+		2014D5111BC361FF00A3B9A6 /* CellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2014D5101BC361FF00A3B9A6 /* CellViewController.m */; };
+		2014D5151BC3643800A3B9A6 /* NumberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2014D5141BC3643800A3B9A6 /* NumberCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		2014D4FE1BC3606C00A3B9A6 /* UICollectionViewInsideOfCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UICollectionViewInsideOfCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2014D5031BC3606C00A3B9A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2014D5041BC3606C00A3B9A6 /* UICollectionViewInsideOfCollectionViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewInsideOfCollectionViewTests.m; sourceTree = "<group>"; };
+		2014D50F1BC361FF00A3B9A6 /* CellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellViewController.h; sourceTree = "<group>"; };
+		2014D5101BC361FF00A3B9A6 /* CellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellViewController.m; sourceTree = "<group>"; };
+		2014D5131BC3643800A3B9A6 /* NumberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberCell.h; sourceTree = "<group>"; };
+		2014D5141BC3643800A3B9A6 /* NumberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,8 @@
 		2014D4DC1BC3606C00A3B9A6 = {
 			isa = PBXGroup;
 			children = (
+				2014D50F1BC361FF00A3B9A6 /* CellViewController.h */,
+				2014D5101BC361FF00A3B9A6 /* CellViewController.m */,
 				2014D4E71BC3606C00A3B9A6 /* UICollectionViewInsideOfCollectionView */,
 				2014D5011BC3606C00A3B9A6 /* UICollectionViewInsideOfCollectionViewTests */,
 				2014D4E61BC3606C00A3B9A6 /* Products */,
@@ -81,6 +89,7 @@
 		2014D4E71BC3606C00A3B9A6 /* UICollectionViewInsideOfCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				2014D50E1BC3611800A3B9A6 /* class */,
 				2014D4EC1BC3606C00A3B9A6 /* AppDelegate.h */,
 				2014D4ED1BC3606C00A3B9A6 /* AppDelegate.m */,
 				2014D4EF1BC3606C00A3B9A6 /* ViewController.h */,
@@ -117,6 +126,23 @@
 				2014D5031BC3606C00A3B9A6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2014D50E1BC3611800A3B9A6 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				2014D5121BC363AE00A3B9A6 /* cell */,
+			);
+			name = class;
+			sourceTree = "<group>";
+		};
+		2014D5121BC363AE00A3B9A6 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				2014D5131BC3643800A3B9A6 /* NumberCell.h */,
+				2014D5141BC3643800A3B9A6 /* NumberCell.m */,
+			);
+			name = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +245,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2014D5151BC3643800A3B9A6 /* NumberCell.m in Sources */,
 				2014D4F11BC3606C00A3B9A6 /* ViewController.m in Sources */,
 				2014D4EE1BC3606C00A3B9A6 /* AppDelegate.m in Sources */,
+				2014D5111BC361FF00A3B9A6 /* CellViewController.m in Sources */,
 				2014D4EB1BC3606C00A3B9A6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

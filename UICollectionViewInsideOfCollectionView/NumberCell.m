@@ -10,4 +10,7 @@
 
 @implementation NumberCell
 
+- (void)LoadCell:(NSString *)Number{
+    [txtNumber setText:Number];
+}
 @end
